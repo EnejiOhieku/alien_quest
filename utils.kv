@@ -1,0 +1,17 @@
+
+<ImageButton>:
+    alpha: 1
+    canvas.after:
+        Color:
+            rgba: self.image_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+            source: self.image_path
+        Color:
+            rgba: self.border_color
+        Line:
+            circle: self.center_x, self.center_y, self.border_width + self.width/2
+            width: self.border_width
+    background_color: 0, 0, 0, 0
+

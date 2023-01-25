@@ -1,0 +1,18 @@
+<JoystickPad>:
+    id: pad
+    canvas:
+
+        ###  Background  ###
+        Color:
+            rgba: 1, 1, 1, 1#self._background_color
+        Ellipse:
+            source: "assets/imgs/controls/stick.png"
+            pos: (self.center_x - self._radius), (self.center_y - self._radius)
+            size: (self._diameter, self._diameter)
+
+#        ###  Border  ###
+#        Color:
+#            rgba: self._line_color
+#        Line:
+#            circle: (self.center_x, self.center_y, (self._diameter - (self._line_width * 2)) / 2)
+#            width: self._line_width
