@@ -57,7 +57,7 @@ class Game(Widget):
         self.scroll_y = (self.HEIGHT - self.height) / 2
         self.player.curr_pos = self.scroll_x + self.center_x, self.scroll_y + self.center_y
         self.sprite2.curr_pos = self.player.curr_x, self.player.curr_y + 120
-        for i in range(1):
+        for i in range(5):
             UFO(parent=self, pos=self.spawn_pos())
         self.joystick1 = self.player.joystick1
         self.joystick2 = self.player.joystick2
